@@ -5,7 +5,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="shortcut icon" type="image/png" href="images/hs.png"/>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Dancing+Script" rel="stylesheet">
@@ -15,7 +15,7 @@
   </head>
   <body>
       <main class="mh-100 d-flex flex-column">
-        <h1 class="m-5 myName"> <i class="fab fa-js-square"></i> Hassan Sani <small class="text-muted aName">inidaname</small></h1>
+        <h1 class="m-5 myName"> <img src="/images/hs.png" width="35px" style="margin-bottom: 12px;" alt="My Logo" srcset=""> Hassan Sani <small class="text-muted aName">inidaname</small></h1>
         <div class="w-75 fullW m-auto d-flex flex-column flex-lg-row flex-xl-row justify-content-center align-items-center">
           <div>
             <p>
@@ -30,7 +30,7 @@
               <br> I think I'm doing a good job on that.
             </p>
           </div>
-          <img src="" alt="">
+          <img src="" class="rdimg" id="rdimg" alt="">
         </div>
         <div class="mt-5 mb-3 d-flex flex-column flex-lg-row flex-lg-row justify-content-center align-items-center textSi">
           <span><i class="fa fa-mobile-phone" aria-hidden="true"></i> +234 802 080 5827&nbsp;&nbsp;</span><span><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:saniyhassan@gmail.com">saniyhassan@gmail.com</a></span>
@@ -57,7 +57,7 @@
       inidaname
       .getProfile()
       .then(({data: members}) => {        
-        $('img').attr('src', members.avatar_url);
+        $('#rdimg').attr('src', members.avatar_url);
       })
 
     </script>

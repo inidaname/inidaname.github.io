@@ -7,7 +7,7 @@ body{
     font-family: 'Dancing Script', cursive;
 }
 
-img{
+.rdimg{
     width: 95% ;
     margin-top: 10px;
     border-radius: 50%;
@@ -29,7 +29,7 @@ img{
     .textSi div {
         margin-top: 20px;
     }
-    img{
+    .rdimg{
         width: 95% ;
         margin-top: 10px;
         border-radius: 50%;
