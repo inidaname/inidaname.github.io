@@ -7,6 +7,13 @@ body{
     font-family: 'Dancing Script', cursive;
 }
 
+img{
+    width: 95% ;
+    margin-top: 10px;
+    border-radius: 50%;
+}
+
+
 @media screen and (min-width: 320px) and (max-width: 780px){
     .myName{
         font-family: 'Dancing Script', cursive;
@@ -21,6 +28,11 @@ body{
     }
     .textSi div {
         margin-top: 20px;
+    }
+    img{
+        width: 95% ;
+        margin-top: 10px;
+        border-radius: 50%;
     }
 }
 
