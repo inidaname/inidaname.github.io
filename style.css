@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.myName{
+    font-family: 'Dancing Script', cursive;
+}
+
+@media screen and (min-width: 320px) and (max-width: 780px){
+    .myName{
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.5rem;
+    }    
+    .aName{
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 0.4em;
+    }
+    .textSi span{
+        margin: 2px 0;
+    }
+    .textSi div {
+        margin-top: 20px;
+    }
+}
+
+.aName{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.6em;
+}
+
+.textSi{
+    font-size: 18px;
+}
+
+.textSi a {
+    color: black;
+}
+
+.matBD span{
+    margin: 0 10px;
+}
+
+.matBD .fa, .matBD .fas, .matBD .fab {
+    font-size: 26px;
+}
