@@ -15,6 +15,7 @@
     rel="stylesheet" />
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -58,7 +59,7 @@
     <main class="w-100 mt-5 d-flex flex-column">
       <div class="w-100 intro">
         <h2 class="welcome">Welcome</h2>
-        <p>
+        <p class="seeIt" data-aos="fade-up" data-aos-delay="3000">
           You can call me <strong>Hassan Sani</strong> or
           <strong>iNidAName</strong> (pronounced
           <strong>I Need A Name</strong>), important things you should know
@@ -66,9 +67,9 @@
           Africa and Founder of All Hands Concept, it's not much.
         </p>
       </div>
-      <div class="picside mx-auto d-flex flex-row-reverse justify-content-between align-items-center">
+      <div class="picside mx-auto d-flex flex-column-reverse flex-md-row-reverse justify-content-between align-items-center">
         <div class="w-50">
-          <h3>Before You ask</h3>
+          <h3 class="mt-5 mb-2">Before You ask</h3>
           <p>
             I'm a Full Stack Developer Front End focused particularly MEAN Stack
             and JAMstack, an active Open Source contributor of AMP, Node.js and
@@ -76,8 +77,8 @@
             Abuja and lead Node.js Abuja. <i>Like I said it's not much.</i>
           </p>
         </div>
-        <figure class="figure text-center">
-          <img src="/images/mine.jpg" class="rdimg figure-img" id="rdimg" alt="" />
+        <figure class="figure text-center" data-aos="zoom-out-right" data-aos-duration="1000">
+          <img src="/images/mine.jpg" class="rdimg figure-img" alt="" />
           <figcaption class="figure-caption">My Wife said it a Cool Picture.</figcaption>
         </figure>
       </div>
@@ -88,20 +89,20 @@
       </div>
       <div class="w-100 toolset d-flex flex-column justify-content-center align-items-center">
         <h2 class="mb-5">My Tools</h2>
-        <ul class="tools w-75 mt-3 list-unstyled d-flex flex-wrap justify-content-around align-items-center">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Typescript</li>
-          <li>SASS</li>
-          <li>Node.js</li>
-          <li>Angular</li>
-          <li>Git</li>
-          <li>Docker</li>
-          <li>Linux</li>
+        <ul class="tools w-auto mt-3 list-unstyled d-flex flex-wrap justify-content-around align-items-center">
+          <li><i class="fab fa-html5" style="color: #e34f26"></i> HTML</li>
+          <li><i class="fab fa-css3"></i> CSS</li>
+          <li><i class="fab fa-js-square" style="color: #f7df1e"></i> JavaScript</li>
+          <li><i class="fab fa-typescript"></i> Typescript</li>
+          <li><i class="fab fa-sass" style="color: #cd6799"></i> SASS</li>
+          <li><i class="fab fa-node-js" style="color: #215732"></i> Node.js</li>
+          <li><i class="fab fa-angular" style="color: #b52e31"></i>Angular</li>
+          <li><i class="fab fa-git-square" style="color: #f1502f"></i> Git</li>
+          <li><i class="fab fa-docker" style="color: #0db7ed"></i> Docker</li>
+          <li><i class="fa fa-linux"></i>Linux</li>
           <li>C++</li>
           <li>API</li>
-          <li>Google Cloud</li>
+          <li><i class="fab fa-google" style="color: #ea4335"></i>Google Cloud</li>
         </ul>
       </div>
       <div class="w-50 m-auto built d-flex flex-column justify-content-center align-items-center">
@@ -139,8 +140,10 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>
   <script>
+    AOS.init();
     var gh = new GitHub({
       token: "12dcabded067c32781baeccdf397efb978e96fb3"
     });

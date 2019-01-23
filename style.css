@@ -53,13 +53,21 @@ main{
     height: 100vh;
 }
 
+.tools{
+    width: 80% !important;
+}
+
 .tools li{
-    width: 120px;
+    min-width: 120px;
     margin: 10px;
-    border: 1px solid #000;
     padding: 5px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 600;
+}
+
+.tools li i {
+    font-size: 27px;
+    margin-right: 10px;
 }
 
 .built{
@@ -102,6 +110,9 @@ main{
 
 
 @media screen and (min-width: 320px) and (max-width: 780px){
+    .welcome{
+        font-size: 37px;
+    }
     .myName{
         font-family: 'Dancing Script', cursive;
         font-size: 1.5rem;
@@ -121,13 +132,29 @@ main{
         margin-top: 10px;
         border-radius: 50%;
     }
+    h2, h3{
+        font-size: 27px;
+    }
     .intro{
         padding-left: 5vw;
     }
     .intro p {
         width: 72%;
     }
-    
+    .picside, .built, .toolset, .intro{
+        height: auto;
+    }
+    .picside div{
+        width: 90% !important;
+        margin: auto;
+    }
+    .picside .figure{
+        width: 90% !important;
+        margin: auto;
+    }
+    p{
+        font-size: 18px !important;
+    }
 }
 
 .aName{
