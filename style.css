@@ -3,8 +3,77 @@ body{
     padding: 0;
 }
 
+p{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h3{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 37px;
+    text-shadow: 1px 1px 1px #000000ae;
+    color: #fada5e;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    background: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    padding-left: 20px;
+    padding-top: 20px;
+    z-index: 2;
+}
 .myName{
     font-family: 'Dancing Script', cursive;
+    margin: 0;
+}
+
+main{
+    position: relative;
+    z-index: 1;
+}
+
+.intro{
+    height: 100vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 15vw;
+}
+.intro p {
+    width: 57%;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.intro p strong {
+    color: #f0d155;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #000000ae;
+}
+.picside{
+    position: relative;
+    width: 80vw;
+}
+
+.picside p{
+    width: 80%;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.picside .figure{
+    width: 40%;
+}
+
+.welcome{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 57px;
+    text-shadow: 1px 1px 1px #000000ae;
+    color: #fada5e;
 }
 
 .rdimg{
@@ -34,6 +103,13 @@ body{
         margin-top: 10px;
         border-radius: 50%;
     }
+    .intro{
+        padding-left: 5vw;
+    }
+    .intro p {
+        width: 72%;
+    }
+    
 }
 
 .aName{
