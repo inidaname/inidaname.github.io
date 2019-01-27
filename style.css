@@ -133,7 +133,7 @@ main{
         border-radius: 50%;
     }
     h2, h3{
-        font-size: 27px;
+        font-size: 22px;
     }
     .intro{
         padding-left: 5vw;
@@ -141,6 +141,7 @@ main{
     .intro p {
         width: 72%;
     }
+    .picside{ height: auto;}
     .picside, .built, .toolset, .intro{
         height: auto;
     }
@@ -176,4 +177,25 @@ main{
 
 .matBD .fa, .matBD .fas, .matBD .fab {
     font-size: 26px;
+}
+
+footer{
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 5px 0px 5px #000;
+    background-color: #e4e4e4;
+}
+
+footer .fa, footer .fab{
+    font-size: 27px;
+}
+
+footer div {
+    min-width: 50%;
+}
+
+footer h2 {
+    font-size: 18px;
+    color: #000;
+    text-shadow: 0 0 0 #000;
 }
