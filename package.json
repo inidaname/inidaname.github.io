@@ -1,0 +1,24 @@
+{
+  "name": "inidaname.github.io",
+  "version": "1.0.0",
+  "description": "Built on pure HTML and Bootstrap with links to all my social media do check it out thanks",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inidaname/inidaname.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inidaname/inidaname.github.io/issues"
+  },
+  "homepage": "hassansani.me",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
