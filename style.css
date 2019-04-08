@@ -25,6 +25,11 @@ header{
     padding-top: 20px;
     z-index: 2;
 }
+
+nav{
+    
+}
+
 .myName{
     font-family: 'Dancing Script', cursive;
     margin: 0;

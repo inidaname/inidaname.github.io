@@ -7,7 +7,7 @@
   <meta charset="utf-8" />
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="Hassan Sani, I love using technology to build little things that solve big problems. Let's talk on Coffee or with JavaScript">
+  <meta name="description" content="Hassan Sani aka iNidAName, I love using technology to build little things that solve big problems. Let's talk on Coffee or with JavaScript">
   <meta name="robots" content="index, follow">
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="@iNidAName" />
@@ -20,27 +20,30 @@
   <meta property="og:image" content="http://hassansani.me/images/preview.jpg">
   <meta property="og:url" content="http://hassansani.me">
   <link rel="shortcut icon" type="image/png" href="images/hs.png" />
-  <link rel=”canonical” href="https://hassansani.me/" />
+  <link rel="canonical" href="https://hassansani.me/" />
   <!-- Bootstrap CSS -->
   <!-- <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" /> -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-    crossorigin="anonymous">
+    crossorigin="anonymous"> 
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Dancing+Script|Noto+Sans+TC:900|Ubuntu:300,400"
     rel="stylesheet" />
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="./style.css" />
   <meta name="google-site-verification" content="gSGqKTsPOUJqOwb7WeMpoWVoVSMTzadG7GfClrJQUNw" />
 </head>
 
 <body>
   <div class="container-fluid">
-    <header>
+    <header class="w-100 d-flex flex-row align-items-center justify-content-between">
       <h1 class="m-2 myName">
         <img src="/images/hs.png" width="35px" style="margin-bottom: 12px;" alt="HS Logo" />
         Hassan Sani <small class="text-muted aName">inidaname</small>
       </h1>
+      <nav class="h-100 border">
+        home
+      </nav>
     </header>
     <main class="w-100 mt-5 d-flex flex-column">
       <div class="w-100 intro">
@@ -94,20 +97,6 @@
             <li data-aos="zoom-out-right" data-aos-duration="1000" data-aos-delay="1000"><i class="fab fa-google" style="color: #ea4335"></i>Google Cloud</li>  
         </ul>
       </div>
-      <!-- <div class="w-50 m-auto built d-flex flex-column justify-content-center align-items-center">
-        <h2>Things I have built</h2>
-        <p>Check my <a href="https://github.com/inidaname?tab=repositories">GitHub Profile</a></p>
-         <ul>
-          <li>ADP</li>
-          <li>Telemetry</li>
-          <li>Nigerco</li>
-          <li>Y Y Sani</li>
-          <li>Pidgin Translator</li>
-          <li>El Mahdy</li>
-          <li>All Hands</li>
-          <li>This</li>
-        </ul> 
-      </div> -->
     </main>
 
   </div>
@@ -131,17 +120,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script>
-  <script>
-    AOS.init();
-    var gh = new GitHub({
-      token: "12dcabded067c32781baeccdf397efb978e96fb3"
-    });
-    const inidaname = gh.getUser("inidaname");
-    inidaname.getProfile().then(({ data: members }) => {
-      $("#rdimg").attr("src", members.avatar_url);
-    });
-  </script>
+  <!-- <script src="https://unpkg.com/github-api/dist/GitHub.bundle.min.js"></script> -->
+  <script src="./script.js"></script>
 </body>
 
 </html>
