@@ -1,13 +1,17 @@
     AOS.init();
-    var gh = new GitHub({
-      username: 'inidaname',
-      token: "12dcabded067c32781baeccdf397efb978e96fb3"
-    });
-    const inidaname = gh.getUser("inidaname");
-    const myBlog = gh.getRepo('inidaname/idchal');
+    const converter = new showdown.Converter();
+
+    import { inidaname, myBlog } from './js/github.js'
+
     inidaname.getProfile().then(({ data: members }) => {
       $("#rdimg").attr("src", members.avatar_url);
     });
-    myBlog.getContents().then(data => console.log(data))
-    console.log(myBlog)
-    inidaname.listRepos().then(data => console.log(data))
+
+    myBlog.getContents().then((data) => {
+      data.data.forEach(el => {
+        if (el.type === 'dir') {
+          console.log(el)
+          myBlog.getContents('master', el.path).then(dt => console.log(dt))
+        }
+      })
+    })
