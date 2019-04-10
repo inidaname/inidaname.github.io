@@ -1,7 +1,8 @@
 AOS.init();
-const gh = new GitHub({
-	username: 'inidaname',
-	token: '8cfcd51e6ca09b0fe24e297e6589075edafb802a '
+import { details } from '../config/config.js'
+export const gh = new GitHub({
+	username:  details.username,
+	token: blowfish.decrypt(details.key,'something', {cipherMode: 0, outputType: 0})
 });
 export const inidaname = gh.getUser();
 export const myBlog = gh.getRepo('inidaname/myblogs');
