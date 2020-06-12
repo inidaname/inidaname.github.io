@@ -1,0 +1,4 @@
+<p>posts works!</p>
+<ul>
+  <li *ngFor="let page of links$ | async" [ngStyle]="{'display: none': !page.published}">{{ page.route }}</li>
+</ul>
