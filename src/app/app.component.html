@@ -1,16 +1,26 @@
-<header class="w-screen flex flex-col text-center pt-6">
-  <div class="mb-10 flex justify-center w-1/2 flex-row items-center m-auto">
+<header class="w-screen bg-white flex flex-col text-center pt-6">
+  <div class="mb-10 flex justify-center w-full md:w-1/2 flex-row items-center m-auto">
     <img src="./assets/images/tmine.jpg" class="rounded-full w-10 mx-3" alt="Hassan Sani">
-    <h1 class="text-4xl font-serif font-bold">Hassan Sani <small class="text-2xl font-thin"><em>inidaname</em></small></h1>
+    <h1 class="text-2xl md:text-3xl lg:text-4xl font-serif font-bold">Hassan Sani <small class="text-sm lg:text-2xl font-thin"><em>inidaname</em></small></h1>
   </div>
   <nav class="w-full border-b">
-    <ul class="w-1/2 sm:w-full md:w-full lg:w-1/2 m-auto flex flex-row justify-around">
+    <ul class="w-full sm:w-full md:w-full lg:w-1/2 m-auto flex flex-row justify-around">
       <li>Me</li>
       <li>Blog</li>
       <li>Talk</li>
-      <li>Project</li>
-      <li>Get In Touch</li>
+      <li>Video</li>
+      <li>Contact</li>
     </ul>
   </nav>
 </header>
 <router-outlet></router-outlet>
+<footer class="w-full text-sm text-gray-500 sm:w-full lg:w-1/4 flex justify-around items-center mx-auto my-10 flex-col sm:flex-col lg:flex-row">
+    <span>&copy; 2020 Hassan Sani</span>
+    <span>
+      <a href="https://twitter.com/inidaname" target="_blank" class="mx-2 text-2xl"><fa-icon [icon]="twitter"></fa-icon></a>
+      <a href="https://github.com/inidaname" target="_blank" class="mx-2 text-2xl"><fa-icon [icon]="github"></fa-icon></a>
+      <a href="https://dev.to/inidaname" target="_blank" class="mx-2 text-2xl"><fa-icon [icon]="dev"></fa-icon></a>
+      <a href="https://medium.com/@inidaname" target="_blank" class="mx-2 text-2xl"><fa-icon [icon]="medium"></fa-icon></a>
+      <a href="https://linkedin.com/in/inidaname" target="_blank" class="mx-2 text-2xl"><fa-icon [icon]="linkedin"></fa-icon></a>
+    </span>
+</footer>

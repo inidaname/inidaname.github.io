@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faTwitter, faGithub, faLinkedin, faDev, faMedium } from '@fortawesome/free-brands-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'inlineStyle';
+  twitter = faTwitter;
+  github = faGithub;
+  linkedin = faLinkedin;
+  dev = faDev;
+  medium = faMedium;
 }
