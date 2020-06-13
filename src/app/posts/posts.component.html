@@ -1,4 +1,10 @@
-<p>posts works!</p>
-<ul>
-  <li *ngFor="let page of links$ | async" [ngStyle]="{'display: none': !page.published}">{{ page.route }}</li>
-</ul>
+<main class="w-screen py-10 h-auto box-border mx-auto">
+  <section class="w-4/5 bg-white justify-around shadow-md rounded items-center sm:w-4/5 box-border lg:w-3/4 flex flex-col mx-auto border">
+    <ul>
+      <li class="shadow-md my-5 p-4" *ngFor="let page of links$ | async" [ngClass]="{'hidden': !page.published}">
+       <a [routerLink]="['/'+page.route]"><h2 class="text-2xl font-bold mt-3 px-3 lg:text-3xl">{{ page.title }}</h2></a>
+        <p class="w-full px-4 sm:w-full lg:w-1/2">{{ page.description }}</p>
+      </li>
+    </ul>
+  </section>
+</main>
