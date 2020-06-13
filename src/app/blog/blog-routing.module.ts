@@ -10,7 +10,8 @@ const routes: Routes = [
   },
   {
     path: '**',
-    component: BlogComponent,
+    pathMatch: 'full',
+    redirectTo: '/posts'
   }
 ];
 
