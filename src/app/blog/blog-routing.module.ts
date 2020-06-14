@@ -2,6 +2,7 @@ import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
 import {BlogComponent} from './blog.component';
+import { PathNotFoundComponent } from '../path-not-found/path-not-found.component';
 
 const routes: Routes = [
   {
@@ -10,8 +11,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    pathMatch: 'full',
-    redirectTo: '/posts'
+    component: PathNotFoundComponent
   }
 ];
 

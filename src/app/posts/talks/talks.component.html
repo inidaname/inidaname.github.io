@@ -1,0 +1,12 @@
+<main class="w-screen py-10 h-auto box-border mx-auto">
+  <ul class="border">
+    <li  class="w-4/5 bg-white p-5 justify-start shadow-md rounded items-start sm:w-4/5 box-border lg:w-3/4 flex flex-col mx-auto border" *ngFor="let page of links$ | async" [ngClass]="{'hidden': !page.published}">
+      <a [routerLink]="['/'+page.route]"><h2 class="text-2xl font-bold mt-3 px-3 lg:text-3xl">{{ page.title }}</h2></a>
+      <small class="text-sm text-gray-500 italic px-3 mb-1">{{ page.date }}</small>
+      <div class="w-100 p-5 flex flex-col sm:flex-col md:flex-row border">
+        <p class="w-full px-4 sm:w-full lg:w-1/2">{{ page.description }}</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, consequuntur atque ab quam optio repellendus voluptatem adipisci vitae esse? Totam sed iure consequatur obcaecati tempore exercitationem praesentium numquam delectus maxime!</p>
+      </div>
+    </li>
+  </ul>
+</main>

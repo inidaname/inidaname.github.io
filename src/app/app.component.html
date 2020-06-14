@@ -5,11 +5,21 @@
   </div>
   <nav class="w-full border-b">
     <ul class="w-full sm:w-full md:w-full lg:w-1/2 m-auto flex flex-row justify-around">
-      <li>Me</li>
-      <li>Blog</li>
-      <li>Talk</li>
-      <li>Video</li>
-      <li>Contact</li>
+      <li>
+        <a [routerLink]="['/home']" routerLinkActive="router-link-active">Me</a>
+      </li>
+      <li>
+        <a [routerLink]="['/posts']" routerLinkActive="router-link-active">Blog</a>
+      </li>
+      <li>
+        <a [routerLink]="['/posts/talks']" routerLinkActive="router-link-active">Talks</a>
+      </li>
+      <li>
+        <a [routerLink]="['/posts/videos']" routerLinkActive="router-link-active">Videos</a>
+      </li>
+      <li>
+        <a [routerLink]="['/contact']" routerLinkActive="router-link-active">Contact</a>
+      </li>
     </ul>
   </nav>
 </header>
