@@ -28,24 +28,35 @@
   <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Dancing+Script|Noto+Sans+TC:900|Ubuntu:300,400"
     rel="stylesheet" />
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="/style.css" />
   <meta name="google-site-verification" content="gSGqKTsPOUJqOwb7WeMpoWVoVSMTzadG7GfClrJQUNw" />
 </head>
 
 <body>
-  <header>
-    <div>
-      My Image
-    </div>
-    <div>
-      My name and tagline
+  <header class="w-screen flex flex-row justify-start items-center h-32">
+    <img src="./images/mine.jpg" class="h-full rounded-full" alt="">
+    <div class="ml-2 h-full items-start justify-start pt-6 flex flex-col w-50">
+      <h1 class="font-bold text-gray-600"> <span class="myName text-5xl mr-2">Hassan Sani</span> <small class="aName text-2xl">iNidAName</small></h1>
+      <p class="text-sm"></p>
     </div>
   </header>
-  <main>
-    My contents
+  <main class="mt-40 w-screen">
+    <p class="text-sm w-full px-3 md:w-1/2">I'm a software developer, building the web with HTML, CSS, and JavaScript. Oh! I also work with Typescript, Angular and Node.js. I have deployed projects to Azure, GCP, and AWS using tools like Docker, and I think I'm learn Kubernetes and GoLang <em>I'm note sure.</em></p>
+    <p class="text-sm w-full px-3 mt-3">You should know. I have been writing code for 5 years and I love doing it.</p>
+    <h6 class="text-sm w-full px-3 mt-3">List of things you should know about me</h6>
+    <ul class="w-full text-sm list-disc px-4 mb-5">
+      <li>I write about things, Motivation, Coding and Angular</li>
+      <li>I contribute to open source</li>
+      <li>I organize and host Q&A with expert from different coding background on YouTube </li>
+      <li>I'm the host of Talk On Coffee podcast</li>
+      <li>Lol, I'm not all about work, I have twitter, tiktok, linkedin, and facebook too</li>
+    </ul>
   </main>
+  <footer class="fixed-bottom flex flex-row items-center justify-center">
+    After 3 days of deciding on design I choose this
+  </footer>
 </body>
 
 </html>
